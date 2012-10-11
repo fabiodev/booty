@@ -30,7 +30,7 @@ elseif($side == 3 ){
 	$categories = get_categories($args);
 
 	foreach($categories as $category) {
-		echo '<li class="active"><a href="">'.$category->name.'</a></li>';
+		/*echo '<li class="active"><a href="">'.$category->name.'</a></li>';*/
 		echo '<li><a href="' . get_category_link( $category->term_id ) . '" title="' . sprintf( $category->name ) . '" ' . '>' . $category->name.'</a> </li> ';
 	}
 ?>
