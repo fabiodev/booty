@@ -30,8 +30,16 @@ elseif($side == 3 ){
 	$categories = get_categories($args);
 
 	foreach($categories as $category) {
-		/*echo '<li class="active"><a href="">'.$category->name.'</a></li>';*/
-		echo '<li><a href="' . get_category_link( $category->term_id ) . '" title="' . sprintf( $category->name ) . '" ' . '>' . $category->name.'</a> </li> ';
+		/*If statment aplica fundo azul*/
+                if(is_category($category->term_id)){
+			echo '<li class="active">';
+		}else{
+			echo '<li>';
+		}
+
+		echo '<a href="' . get_category_link( $category->term_id ) . '" title="' . sprintf( $category->name ) . '" ' 
+                . '>' . $category->name.'</a> </li> ';
+
 	}
 ?>
 </ul><!-- ends nav nav-list --></div><!-- ends well sidebar-nav-->

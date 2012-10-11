@@ -22,8 +22,7 @@ else{
 }
 ?>
 
-<div id="content" class="list-posts">
-<section id="content" class="list-posts">
+<section id="list-posts">
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 <article>
 <header class="page-header">
@@ -48,7 +47,6 @@ else{
 <?php include('pager.php'); ?>
 </section>
 </div>
-</div><!-- pseudo div content -->
 <?php   //adds Sidebar direito se activo
 
         if($side == 1 ){
