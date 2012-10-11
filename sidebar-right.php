@@ -1,4 +1,15 @@
-<div class="span3">
+<?php //Se activo define da largura do sidebar direito em função da existencia do sidebar esquerdo
+
+$side = get_theme_mod( 'sidebar_setting', 'default_value' );
+
+if($side == 2 ){
+        echo '<div class="span4">';
+}
+elseif($side == 3 ){
+        echo '<div class="span3">';
+}
+?>
+
 <?php 
 	if ( dynamic_sidebar('right_sidebar') ) : 
 

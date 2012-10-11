@@ -8,10 +8,10 @@ $side = get_theme_mod( 'sidebar_setting', 'default_value' );
 
 if($side == 1 ){
 	include('sidebar-left.php');
-        echo '<div class="span9">';
+        echo '<div class="span8">';
 }
 elseif($side == 2 ){
-	echo '<div class="span9">';
+	echo '<div class="span8">';
 }
 elseif($side == 3){
         include('sidebar-left.php');
