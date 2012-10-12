@@ -1,6 +1,5 @@
-            </div><!-- container -->
 
-	<div class="container"><hr/>
+	<hr />
 
             <footer>
                 <p class="pull-left">
@@ -11,7 +10,7 @@
                 </p>
             </footer>
 
-        </div><!-- container -->
+        </div><!-- /container -->
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
         <script src="<?php bloginfo('template_directory'); ?>/js/vendor/bootstrap.min.js"></script>

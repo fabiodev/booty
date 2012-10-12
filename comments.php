@@ -63,5 +63,8 @@ You can place your comment if you wish to do so.
 <?php endif; // If registration required and not logged in ?>
 
 <?php else : // Comments are closed ?>
-<p><?php _e('Sorry, the comment form is closed at this time.'); ?></p>
+<div class="alert alert-error">
+<strong>Comments closed!</strong>
+Sorry, the comment form is closed at this time.
+</div>
 <?php endif; ?>

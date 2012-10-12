@@ -92,3 +92,11 @@ function roots_nav_menu_args($args = '') {
 
 add_filter('wp_nav_menu_args', 'roots_nav_menu_args');
 
+/* Fixes Main Menu option when NO sidebar is active */
+function register_my_menus() {
+  register_nav_menus(
+    array( 'main' => __( 'Main' ) )
+  );
+}
+
+add_action( 'init', 'register_my_menus' );
