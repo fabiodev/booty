@@ -9,6 +9,7 @@
 <article>
 <header class="page-header">
   <h1><a href="<?php echo get_permalink( $post->ID ); ?>" class="booty_post_title"><?php the_title(); ?></a> <small><?php the_time('F jS, Y') ?></small></h1>
+  <h4 class="booty_post_title"><i class="icon-pencil"></i> <?php the_author_posts_link(); ?> and <?php the_author_posts(); ?> more.</h4>
 </header>
 <div><?php the_content(__('(more...)')); ?></div>
 <footer>

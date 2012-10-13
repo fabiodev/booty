@@ -82,3 +82,149 @@ ul.xoxo ,
 ul.blogroll {
 	list-style-type: none;
 }
+
+/*Creating Nav bar INFO*/
+.navbar-info {
+  color: #999999;
+}
+
+.navbar-info .navbar-inner {
+  /*background-color: #1b1b1b;*/
+  background-color: #4c72dd;
+  background-image: -moz-linear-gradient(top, #1a21f8, #060cc0);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#1a21f8), to(#060cc0));
+  background-image: -webkit-linear-gradient(top, #1a21f8, #060cc0);
+  background-image: -o-linear-gradient(top, #1a21f8, #060cc0);
+  background-image: linear-gradient(to bottom, #1a21f8, #060cc0);
+  background-repeat: repeat-x;
+  border-color: #252525;
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ff222222', endColorstr='#ff111111', GradientType=0);
+}
+
+.navbar-info .brand,
+.navbar-info .nav > li > a {
+  color: #999999;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+.navbar-info .brand:hover,
+.navbar-info .nav > li > a:hover {
+  color: #ffffff;
+}
+
+.navbar-info .nav > li > a:focus,
+.navbar-info .nav > li > a:hover {
+  color: #ffffff;
+  background-color: transparent;
+}
+
+.navbar-info .nav .active > a,
+.navbar-info .nav .active > a:hover,
+.navbar-info .nav .active > a:focus {
+  color: #ffffff;
+  background-color: #111111;
+}
+
+.navbar-info .navbar-link {
+  color: #999999;
+}
+
+.navbar-info .navbar-link:hover {
+  color: #ffffff;
+}
+
+.navbar-info .divider-vertical {
+  border-right-color: #222222;
+  border-left-color: #111111;
+}
+
+.navbar-info .nav li.dropdown.open > .dropdown-toggle,
+.navbar-info .nav li.dropdown.active > .dropdown-toggle,
+.navbar-info .nav li.dropdown.open.active > .dropdown-toggle {
+  color: #ffffff;
+  background-color: #111111;
+}
+
+.navbar-info .nav li.dropdown > .dropdown-toggle .caret {
+  border-top-color: #999999;
+  border-bottom-color: #999999;
+}
+
+.navbar-info .nav li.dropdown.open > .dropdown-toggle .caret,
+.navbar-info .nav li.dropdown.active > .dropdown-toggle .caret,
+.navbar-info .nav li.dropdown.open.active > .dropdown-toggle .caret {
+  border-top-color: #ffffff;
+  border-bottom-color: #ffffff;
+}
+
+.navbar-info .navbar-search .search-query {
+  color: #ffffff;
+  background-color: #515151;
+  border-color: #111111;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 0 rgba(255, 255, 255, 0.15);
+     -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 0 rgba(255, 255, 255, 0.15);
+          box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 0 rgba(255, 255, 255, 0.15);
+  -webkit-transition: none;
+     -moz-transition: none;
+       -o-transition: none;
+          transition: none;
+}
+
+.navbar-info .navbar-search .search-query:-moz-placeholder {
+  color: #cccccc;
+}
+
+.navbar-info .navbar-search .search-query:-ms-input-placeholder {
+  color: #cccccc;
+}
+
+.navbar-info .navbar-search .search-query::-webkit-input-placeholder {
+  color: #cccccc;
+}
+
+.navbar-info .navbar-search .search-query:focus,
+.navbar-info .navbar-search .search-query.focused {
+  padding: 5px 15px;
+  color: #333333;
+  text-shadow: 0 1px 0 #ffffff;
+  background-color: #ffffff;
+  border: 0;
+  outline: 0;
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+     -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-info .btn-navbar {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  /*background-color: #0e0e0e;*/
+  background-color: #4c72dd;
+  *background-color: #4c72dd;
+  /**background-color: #040404;*/
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#151515), to(#040404));
+  background-image: -webkit-linear-gradient(top, #151515, #040404);
+  background-image: -o-linear-gradient(top, #151515, #040404);
+  background-image: linear-gradient(to bottom, #151515, #040404);
+  background-image: -moz-linear-gradient(top, #151515, #040404);
+  background-repeat: repeat-x;
+  border-color: #040404 #040404 #000000;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ff151515', endColorstr='#ff040404', GradientType=0);
+  filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+}
+
+.navbar-info .btn-navbar:hover,
+.navbar-info .btn-navbar:active,
+.navbar-info .btn-navbar.active,
+.navbar-info .btn-navbar.disabled,
+.navbar-info .btn-navbar[disabled] {
+  color: #ffffff;
+  background-color: #040404;
+  *background-color: #000000;
+}
+
+.navbar-info .btn-navbar:active,
+.navbar-info .btn-navbar.active {
+  background-color: #000000 \9;
+}
