@@ -5,16 +5,17 @@
 
 <section class="list-posts">
 
-/*Preventing this message to show when there ain't nothing to present*/
-<?php if(have_posts()){
-	echo "<div class='alert alert-info'>";
-	echo "<strong>";
+<?php /*Preventing this message to show when there ain't nothing to present*/
+	if(have_posts()){
+        echo "<div class='alert alert-info'>";
+        echo "<strong>";
         wp_title('');
-	echo "!</strong>";
-	echo " Showing all we know about it.";
-	echo "</div>";
-	}
+        echo "!</strong>";
+        echo " Showing all we know about it.";
+        echo "</div>";
+        }
 ?>
+
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 <article>
 <header class="page-header">
