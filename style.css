@@ -83,6 +83,11 @@ ul.blogroll {
 	list-style-type: none;
 }
 
+/*Posts Author*/
+#list-author-posts{
+	float:left;
+}
+
 /*Creating Nav bar INFO*/
 .navbar-info {
   color: #999999;

@@ -17,6 +17,11 @@
 <h3>Comments</h3>
 <?php foreach (get_comments('post_id=' . get_the_ID()) as $comment): ?>
 <blockquote>
+
+<p><?php //print_r( $comment ); ?></p>
+<?php $avat =$comment->comment_author_email;
+if(function_exists('get_avatar')) { echo get_avatar($comment, '32'); } ?>
+
 <p><?=$comment->comment_content?></p>
 <small>
 <cite title="<?=$comment->comment_author?>">
