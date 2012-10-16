@@ -7,7 +7,24 @@
 <header class="page-header">
   <h1><?php the_title(); ?></h1>
 </header>
-<div><?php the_content(); ?></div>
+<div>
+<script type="text/javascript">// <![CDATA[
+width='100%y';          //the width of the embedded map in pixels or percentage
+        height=450;         //the height of the embedded map in pixels or percentage
+        border=1;           //the width of border around the map. Zero means no border
+        notation=false;     //true or false to display or not the vessel icons and options at the left
+        shownames=true;    //true or false to dispaly ship names on the map
+        latitude=32.68;   //the latitude of the center of the map in decimal degrees
+        longitude=-16.915;  //the longitude of the center of the map in decimal degrees
+        zoom=9;             //the zoom level of the map. Use values between 2 and 17
+        maptype=0;          //use 0 for Normal map, 1 for Satellite, 2 for Hybrid, 3 for Terrain
+        trackvessel=0;      //the MMSI of the vessel to track, if within the range of the system
+        fleet='';           //the registered email address of a user-defined fleet to display
+        remember=false;     //true or false to remember or not the last position of the map
+// ]]></script>
+<script type="text/javascript" src="http://www.marinetraffic.com/ais/embed.js"></script>
+
+<?php the_content(); ?></div>
 </article>
 <?php endwhile; ?>
 </section>

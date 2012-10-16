@@ -76,6 +76,10 @@
 	color: black;
 }
 
+.booty_post_date{
+	float: right;
+}
+
 /*Cleans list mark from default widget Archives and Blogroll*/
 .sidebar-nav ul,
 ul.xoxo ,
