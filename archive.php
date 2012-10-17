@@ -23,7 +23,7 @@
 </header>
 <div><?php the_content(__('(more...)')); ?></div>
 <footer>
-<a class="label" onmouseover="this.className='label label-info'" onmouseout="this.className='label'" href="<?php comments_link(); ?>">
+<a class="label" onmouseover="this.className='label label-new-info'" onmouseout="this.className='label'" href="<?php comments_link(); ?>">
 <?php comments_number('no responses', 'one response', '% responses'); ?>
 </a>
 </footer>

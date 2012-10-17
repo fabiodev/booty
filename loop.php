@@ -1,13 +1,7 @@
-<?php get_header(); ?>
-
-<div class="row-fluid">
-
-<?php get_sidebar('left'); ?>
-
 <section id="list-posts">
 
 <?php #$tposts = query_posts();
-	#print_r($tposts);
+        #print_r($tposts);
 ?>
 
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
@@ -19,7 +13,7 @@
 </header>
 <div><?php the_content(__('(more...)')); ?></div>
 <footer>
-<a class="label" onmouseover="this.className='label label-new-info'" onmouseout="this.className='label'" href="<?php comments_link(); ?>">
+<a class="label" onmouseover="this.className='label label-inverse'" onmouseout="this.className='label'" href="<?php comments_link(); ?>">
 <?php comments_number('no responses', 'one response', '% responses'); ?>
 </a><br/><br/>
 <?php include('tags.php'); ?>
@@ -32,13 +26,4 @@
 </div>
 <div class="alert alert-info"><?php get_search_form(); ?></div>
 <?php endif; ?>
-
-<?php //deprecated in favor of infinite scroll
-      //include('pager.php'); ?>
-
-<div id="content"></div>
 </section>
-</div>
-<?php get_sidebar('right'); ?>
-</div>
-<?php get_footer(); ?>
