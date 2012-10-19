@@ -28,6 +28,27 @@ width='100%y';          //the width of the embedded map in pixels or percentage
 </article>
 <?php endwhile; ?>
 </section>
+
+<section id="comments">
+<h3>Comments</h3>
+<?php foreach (get_comments('post_id=' . get_the_ID()) as $comment): ?>
+<blockquote>
+
+<p><?php //print_r( $comment ); ?>
+<?php $avat =$comment->comment_author_email;
+if(function_exists('get_avatar')) { echo get_avatar($comment, '32'); } ?>
+
+<?=$comment->comment_content?></p>
+<small>
+<cite title="<?=$comment->comment_author?>">
+<?=$comment->comment_author?>
+</cite>
+at <?=$comment->comment_date?>
+</small>
+</blockquote>
+<?php endforeach; ?>
+<?php include('comments.php'); ?>
+</section>
 </div>
 
 </div>
