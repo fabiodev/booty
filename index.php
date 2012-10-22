@@ -6,9 +6,31 @@
 
 <section id="list-posts">
 
-<?php #$tposts = query_posts();
-	#print_r($tposts);
+<!-- Modal -->
+<div class="modal hide fade" id="myModal" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+<?php
+$post_id = 4946;
+$queried_post = get_post($post_id);
 ?>
+
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="myModalLabel"><?php echo $queried_post->post_title; ?></h3>
+  </div>
+  <div class="modal-body">
+    <p>
+<?php
+
+echo $queried_post->post_content;
+
+?>
+    </p>
+  </div>
+  <div class="modal-footer">
+    <button class="btn btn-primary" data-dismiss="modal" aria-hidden="true">Close</button>
+  </div>
+</div>
 
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 <article>

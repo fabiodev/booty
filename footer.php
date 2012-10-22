@@ -1,3 +1,4 @@
+<a id="inifiniteLoader" class="btn btn-primary" style="margin-left:auto; margin-right:auto;">Loading...</a>
 	<hr />
 
             <footer>
@@ -24,6 +25,13 @@
 	<script>
 	    $("article img").addClass("img-polaroid");
 	</script>
+
+<script>
+ $(document).ready(function() {
+   // put all your jQuery goodness in here.
+   $('#myModal').modal('toggle');
+ });
+</script>
 
 	<?php require('lib/continuous_scroll.php'); ?>
     </body>

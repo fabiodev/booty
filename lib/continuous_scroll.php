@@ -4,9 +4,11 @@
             $(window).scroll(function(){  
                     if  ($(window).scrollTop() == $(document).height() - $(window).height()){  
                        if (count > total){
+                            $('a#inifiniteLoader').hide('1000');
 				return false;
 			}else{
 				loadArticle(count);  
+                            $('a#inifiniteLoader').show('1000');
                        		count++;  
 			}
                     }  
