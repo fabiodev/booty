@@ -1,4 +1,4 @@
-<a id="inifiniteLoader" class="btn btn-primary" style="margin-left:auto; margin-right:auto;">Loading...</a>
+<!-- <a id="inifiniteLoader" class="btn btn-primary" style="margin-left:auto; margin-right:auto;">Loading...</a> -->
 	<hr />
 
             <footer>

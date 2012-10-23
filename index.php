@@ -6,31 +6,12 @@
 
 <section id="list-posts">
 
-<!-- Modal -->
-<div class="modal hide fade" id="myModal" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-
-<?php
-$post_id = 4946;
-$queried_post = get_post($post_id);
+<?php 
+//Notice to visitors
+if (!is_user_logged_in()) {
+	require('modal-notice.php');
+}
 ?>
-
-  <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-    <h3 id="myModalLabel"><?php echo $queried_post->post_title; ?></h3>
-  </div>
-  <div class="modal-body">
-    <p>
-<?php
-
-echo $queried_post->post_content;
-
-?>
-    </p>
-  </div>
-  <div class="modal-footer">
-    <button class="btn btn-primary" data-dismiss="modal" aria-hidden="true">Close</button>
-  </div>
-</div>
 
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 <article>
@@ -63,4 +44,5 @@ echo $queried_post->post_content;
 </div>
 <?php get_sidebar('right'); ?>
 </div>
+<a id="inifiniteLoader" class="btn btn-primary" style="margin-left:auto; margin-right:auto;">Loading...</a>
 <?php get_footer(); ?>
