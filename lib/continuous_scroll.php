@@ -1,4 +1,5 @@
 <script type="text/javascript">  
+
             var count = 2;  
 	    var total = <?php echo $wp_query->max_num_pages; ?>;
             $(window).scroll(function(){  

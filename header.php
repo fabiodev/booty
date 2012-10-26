@@ -40,6 +40,7 @@
                         <span class="icon-bar"></span>
                     </a>
                     <!-- <a class="brand" href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a> -->
+		    <!-- <a class="brand" href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('template_directory'); ?>/img/titulo_cat.png" alt="ShipsOnCamera" width="250"></a>-->
 		    <a class="brand" href="<?php bloginfo('url'); ?>">Ships<span style="color:blue"><strong>On</strong></span>Camera</a>
 		    <nav id="nav-main" class="nav-collapse" role="navigation">
 			<?php
