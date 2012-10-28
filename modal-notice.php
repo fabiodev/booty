@@ -8,8 +8,8 @@ $queried_post_pt = get_post($post_id_pt);
 $post_id_en = 5004;
 $queried_post_en = get_post($post_id_en);
 
-$post_id_en = 5006;
-$queried_post_dis = get_post($post_id_en);
+$post_id_dis = 5006;
+$queried_post_dis = get_post($post_id_dis);
 ?>
 
   <div class="modal-header" id="modalBody">
