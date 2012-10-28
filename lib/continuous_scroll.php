@@ -1,6 +1,6 @@
 <script type="text/javascript">  
 
-            var count = 2;  
+            var count = <?php echo $posts_per_page; ?>;  
 	    var total = <?php echo $wp_query->max_num_pages; ?>;
             $(window).scroll(function(){  
                     if  ($(window).scrollTop() == $(document).height() - $(window).height()){  

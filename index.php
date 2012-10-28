@@ -6,29 +6,6 @@
 
 <section id="list-posts">
 
-<!-- Start of the script that show all missing images just before the last post -->
-<?php
-
-$query_images_args = array(
-    'post_type' => 'attachment', 'post_mime_type' =>'image', 'post_status' => 'inherit', 'posts_per_page' => -1,
-);
-
-$query_images = new WP_Query( $query_images_args );
-$images = array();
-foreach ( $query_images->posts as $image) {
-    $images[]= wp_get_attachment_url( $image->ID );
-}
-
-foreach($images as $img){
-	$url=@getimagesize($img);
-	if(!is_array($url))
-	{
-		echo $img;
-	}
-}
-?>
-<!-- END of imgs script -->
-
 <?php 
 //Notice to visitors
 if (!is_user_logged_in()) {
