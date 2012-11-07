@@ -2,7 +2,7 @@
 <div class="row-fluid">
 <?php get_sidebar('left'); ?>
 
-<section>
+<section class="list-posts">
 <?php while (have_posts()) : the_post(); ?>
 <article>
 <header class="page-header">

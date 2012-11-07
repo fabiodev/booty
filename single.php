@@ -10,7 +10,7 @@
   <h1><?php the_title(); ?> <small><?php the_time('F jS, Y') ?></small></h1>
 </header>
 <div><?php the_content(); ?></div>
-<?php //ADDs tags to the bottom of the ost if they exist
+<?php //ADDs tags to the bottom of the post if they exist
 	require('tags.php'); ?>
 <hr />
 <section id="comments">

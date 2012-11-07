@@ -16,9 +16,9 @@ if (!is_user_logged_in()) {
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 <article>
 <header class="page-header">
-  <h1 class="booty_post_date"><small><?php the_time('F jS, Y') ?></small></h1>
-  <h1><a href="<?php echo get_permalink( $post->ID ); ?>" class="booty_post_title"><?php the_title(); ?></a></h1>
-  <h4 class="booty_post_title"><i class="icon-pencil"></i> By <?php the_author_posts_link(); ?>.</h4>
+  <h1><a href="<?php echo get_permalink( $post->ID ); ?>" class="booty_post_title"><?php the_title(); ?></a><br>
+<small style="float:left"><?php the_time('F jS, Y') ?></small></h1>
+  <h4 style="float:right" ><i class="icon-pencil"></i> By <?php the_author_posts_link(); ?>.</h4>
 </header>
 <div><?php the_content(__('(more...)')); ?></div>
 <footer>
@@ -39,7 +39,6 @@ if (!is_user_logged_in()) {
 <?php //deprecated in favor of infinite scroll
       //include('pager.php'); ?>
 
-<div id="content"></div>
 </section>
 </div>
 <?php get_sidebar('right'); ?>

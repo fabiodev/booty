@@ -14,7 +14,6 @@ $queried_post_dis = get_post($post_id_dis);
 
   <div class="modal-header" id="modalBody">
     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-    <!-- <h3 id="myModalLabel"><?php echo $queried_post->post_title; ?></h3>-->
 
 <ul class="nav nav-tabs" id="myTab">
   <li class="active"><a data-toggle="tab" href="#pt">PT</a></li>
