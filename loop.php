@@ -6,7 +6,7 @@
   <!-- <h1 class="booty_post_date"><small><?php the_time('F jS, Y') ?></small></h1>-->
   <h1><a href="<?php echo get_permalink( $post->ID ); ?>" class="booty_post_title"><?php the_title(); ?></a><br>
 <small style="float:left"><?php the_time('F jS, Y') ?></small></h1>
-  <h4 style="float:right" ><i class="icon-pencil"></i> By <?php the_author_posts_link(); ?>.</h4>
+  <h4 style="float:right" ><i class="icon-pencil"></i> By <?php the_author_posts_link(); ?>.</h4><br>
 </header>
 <div><?php the_content(__('(more...)')); ?></div>
 <footer>
