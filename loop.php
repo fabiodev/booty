@@ -24,3 +24,7 @@
 <div class="alert alert-info"><?php get_search_form(); ?></div>
 <?php endif; ?>
 <!-- </section>-->
+<script>
+            $("article img").addClass("img-polaroid");
+</script>
+
