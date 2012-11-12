@@ -19,11 +19,11 @@
 	if($comment->comment_approved == 1): ?>
 <blockquote>
 
-<p><?php //print_r( $comment ); ?></p>
+<p><?php //print_r( $comment ); ?>
 <?php $avat =$comment->comment_author_email;
 if(function_exists('get_avatar')) { echo get_avatar($comment, '32'); } ?>
 
-<p><?=$comment->comment_content?></p>
+<?=$comment->comment_content?></p>
 <small>
 <cite title="<?=$comment->comment_author?>">
 <?=$comment->comment_author?>

@@ -31,7 +31,8 @@ width='100%y';          //the width of the embedded map in pixels or percentage
 
 <section id="comments">
 <h3>Comments</h3>
-<?php foreach (get_comments('post_id=' . get_the_ID()) as $comment): ?>
+<?php foreach (get_comments('post_id=' . get_the_ID()) as $comment):
+	if($comment->comment_approved == 1): ?>
 <blockquote>
 
 <p><?php //print_r( $comment ); ?>
@@ -39,14 +40,15 @@ width='100%y';          //the width of the embedded map in pixels or percentage
 if(function_exists('get_avatar')) { echo get_avatar($comment, '32'); } ?>
 
 <?=$comment->comment_content?></p>
-<small>
+<small><strong>
 <cite title="<?=$comment->comment_author?>">
-<?=$comment->comment_author?>
+<?=$comment->comment_author?></strong>
 </cite>
 at <?=$comment->comment_date?>
 </small>
 </blockquote>
-<?php endforeach; ?>
+<?php endif;
+	endforeach; ?>
 <?php include('comments.php'); ?>
 </section>
 </div>
