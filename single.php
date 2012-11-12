@@ -15,7 +15,8 @@
 <hr />
 <section id="comments">
 <h3>Comments</h3>
-<?php foreach (get_comments('post_id=' . get_the_ID()) as $comment): ?>
+<?php foreach (get_comments('post_id=' . get_the_ID()) as $comment): 
+	if($comment->comment_approved == 1): ?>
 <blockquote>
 
 <p><?php //print_r( $comment ); ?></p>
@@ -30,7 +31,8 @@ if(function_exists('get_avatar')) { echo get_avatar($comment, '32'); } ?>
 at <?=$comment->comment_date?>
 </small>
 </blockquote>
-<?php endforeach; ?>
+<?php endif;
+	endforeach; ?>
 <?php include('comments.php'); ?>
 </section>
 </article>
