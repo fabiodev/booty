@@ -15,7 +15,7 @@
 	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/bootstrap.min.css">
 	<style>
 		body{
-			padding-top: 60px;
+			padding-top: 100px;
 			padding-bottom: 40px;
 		}
 	</style>
@@ -40,8 +40,8 @@
                         <span class="icon-bar"></span>
                     </a>
                     <!-- <a class="brand" href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a> -->
-		    <!-- <a class="brand" href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('template_directory'); ?>/img/titulo_cat.png" alt="ShipsOnCamera" width="250"></a>-->
-		    <a class="brand" href="<?php bloginfo('url'); ?>">Ships<span style="color:blue"><strong>On</strong></span>Camera</a>
+		    <a class="brand" href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('template_directory'); ?>/img/titulo_cat.png" alt="ShipsOnCamera" width="250"></a>
+		    <!-- <a class="brand" href="<?php bloginfo('url'); ?>">Ships<span style="color:blue"><strong>On</strong></span>Camera</a>-->
 		    <nav id="nav-main" class="nav-collapse" role="navigation">
 			<?php
 			if (has_nav_menu('main')) {
