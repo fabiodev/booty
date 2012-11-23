@@ -24,6 +24,7 @@
 	<script>
 	    $("article img").addClass("img-polaroid");
 	</script>
+	<script> $('#myModal').modal('toggle'); </script>
     </body>
 </html>
 <!--<?php echo get_num_queries(); ?> queries. <?php timer_stop(1); ?> seconds. -->

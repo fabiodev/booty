@@ -5,6 +5,9 @@
 <?php get_sidebar('left'); ?>
 
 <section id="list-posts">
+
+<?php require('modal-notice.php'); ?>
+
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 <article>
 <header class="page-header">
