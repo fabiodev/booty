@@ -6,7 +6,11 @@
 
 <section id="list-posts">
 
-<?php require('modal-notice.php'); ?>
+<?php 
+	$aNotice = get_theme_mod( 'notice_setting', 'default_value' );
+	if(!($aNotice==0)){ require('modal-notice.php');
+	}
+?>
 
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 <article>

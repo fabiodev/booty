@@ -63,4 +63,30 @@ function booty_customize($wp_customize) {
 		),
 	) );
 
+//Notice options
+	$wp_customize->add_section( 'booty_notice_settings', array(
+                'title'          => 'On load Notice',
+                'priority'       => 36,
+        ) );
+
+        $wp_customize->add_setting( 'notice_setting', array(
+                'default'        => '0',
+                //'type'           => 'radio',
+                'capability'     => 'edit_theme_options',
+        ) );
+
+        $wp_customize->add_control( 'notice_setting', array(
+                'label'      => 'On load Notice',
+                'section'    => 'booty_notice_settings',
+                'settings'   => 'notice_setting',
+                'type'       => 'radio',
+                'choices'    => array(
+                        '0' => 'No Notice',
+                        '1' => 'Notice One',
+                        '2' => 'Notice Two',
+                        '3' => 'Notice Three',
+                ),
+        ) );
+
+
 }
