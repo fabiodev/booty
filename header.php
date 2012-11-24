@@ -15,7 +15,7 @@
 	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/bootstrap.min.css">
 	<style>
 		body{
-			padding-top: 100px;
+			padding-top: 60px;
 			padding-bottom: 40px;
 		}
 	</style>
