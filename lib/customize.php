@@ -64,3 +64,12 @@ function booty_customize($wp_customize) {
 	) );
 
 }
+// add more buttons to the html editor
+function appthemes_add_quicktags() {
+?>
+    <script type="text/javascript">
+    QTags.addButton( 'eg_bootybutton', 'Bb', '<button class="btn btn-info" type="button">', '</button>' );
+    </script>
+<?php
+}
+add_action( 'admin_print_footer_scripts', 'appthemes_add_quicktags' );
