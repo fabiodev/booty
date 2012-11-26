@@ -63,7 +63,7 @@ function booty_customize($wp_customize) {
 		),
 	) );
 
-//Notice options
+/*Notice options
 	$wp_customize->add_section( 'booty_notice_settings', array(
                 'title'          => 'On load Notice',
                 'priority'       => 36,
@@ -86,7 +86,7 @@ function booty_customize($wp_customize) {
                         '2' => 'Notice Two',
                         '3' => 'Notice Three',
                 ),
-        ) );
+        ) );*/
 
 
 }
