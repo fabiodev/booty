@@ -33,6 +33,12 @@
 	padding:9px 0;
 }
 
+.sidebar-widget {
+  color: #3a87ad;
+  background-color: #cfddff;
+  border-color: #2d13f0;
+}
+
 /*Fix Default Calendar Widget*/
 #wp-calendar{
 	margin-left: 10%;
