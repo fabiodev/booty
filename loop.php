@@ -24,7 +24,7 @@ if (!is_user_logged_in()) {
 	}
  ?>
 <a class="<?php echo $comments_class; ?>" onmouseover="this.className='label label-new-info'" onmouseout="this.className='<?php echo $comments_class; ?>'" href="<?php comments_link(); ?>">
-<?php comments_number('no responses', 'one response', '% responses'); ?>
+<?php comments_number('respond', 'one response', '% responses'); ?>
 </a><br/><br/>
 <?php include('tags.php'); ?>
 </footer>

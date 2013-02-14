@@ -25,6 +25,8 @@
 
         <script src="<?php bloginfo('template_directory'); ?>/js/vendor/modernizr-2.6.1-respond-1.1.0.min.js"></script>
 
+	<?php include("lib/simple_html_dom.php"); ?>
+
 	<!-- <link rel="icon" href="http://84.23.214.33/wdev/favicon.ico" type="image/ico" /> -->
 
     <?php //wp_head(); ?>
