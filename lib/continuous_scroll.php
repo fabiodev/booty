@@ -20,7 +20,7 @@
                         type:'POST',  
                         data: "action=infinite_scroll&page_no="+ pageNumber + '&loop_file=loop',  
                         success: function(html){  
-                            $("#list-posts").append(html);   // This will be the div where our content will be loaded  
+                            $(".main-posts").append(html);   // This will be the div where our content will be loaded  
                         }  
                     });  
                 return false;  

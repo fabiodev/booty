@@ -15,9 +15,10 @@ if (!is_user_logged_in()) {
 <?php require('loop.php'); ?>
 
 <?php //deprecated in favor of infinite scroll
-      //include('pager.php'); ?>
+      //include('pager.php'); 
+?>
 
-</div>
+</div><!-- this closes a div tag that's opened on the file sidebar-left but containes the posts-->
 <?php get_sidebar('right'); ?>
 </div>
 <a id="inifiniteLoader" class="btn btn-primary" style="margin-left:auto; margin-right:auto;">Scroll down to load more posts...</a>

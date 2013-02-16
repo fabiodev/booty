@@ -9,10 +9,10 @@ if($side == 1 ) : ?>
 	}
 	?>
 	</div>
-       	<div class="span8">
+       	<div class="main-posts span8">
 
 <?php elseif($side == 2 ) : ?>
-        <div class="span8">
+        <div class="main-posts span8">
 
 <?php elseif($side == 3) : ?>
 	<div class="span3">
@@ -22,8 +22,8 @@ if($side == 1 ) : ?>
 	}
 	?>
 	</div>
-        <div class="span6">
+        <div class="main-posts span6">
 
 <?php else : ?>
-	<div class="span12">
+	<div class="main-posts span12">
 <?php endif; ?>
