@@ -16,18 +16,19 @@
         <script src="<?php bloginfo('template_directory'); ?>/js/vendor/bootstrap.min.js"></script>
         <script src="<?php bloginfo('template_directory'); ?>/js/main.js"></script>
         <script>
-            var _gaq=[['_setAccount','UA-XXXXXXX-X'],['_trackPageview']];
+            var _gaq=[['_setAccount','UA-4285789-5'],['_trackPageview']];
             (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
             g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
             s.parentNode.insertBefore(g,s)}(document,'script'));
         </script>
 	<script>
-		$("article img").addClass("img-polaroid");
-		$("p.wp-caption-text").before("<li class='nav-header'>Sobre a foto a cima:</li>");
-		$("p.wp-caption-text").css("color","blue");
-		$("p.wp-caption-text").css("font-weight","bold");
-		$("p.wp-caption-text").wrap("<div class='well'></div>");
-	</script>
+                $("article img").addClass("img-polaroid");
+               	<!--$("p.wp-caption-text").before("<li class='nav-header'>Sobre a foto a cima:</li>");-->
+                $("p.wp-caption-text").css("color","blue");
+                $("p.wp-caption-text").css("font-weight","bold");
+		$("p.wp-caption-text").addClass("well");
+                <!--$("p.wp-caption-text").wrap("<div class='well'></div>");-->
+        </script>
 
 <script>
  $(document).ready(function() {

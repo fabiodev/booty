@@ -44,8 +44,9 @@ if (!is_user_logged_in()) {
 </section>
         <script>
                 $("article img").addClass("img-polaroid");
-                $("p.wp-caption-text").before("<li class='nav-header'>Sobre a foto a cima:</li>");
+                <!--$("p.wp-caption-text").before("<li class='nav-header'>Sobre a foto a cima:</li>");-->
                 $("p.wp-caption-text").css("color","blue");
                 $("p.wp-caption-text").css("font-weight","bold");
-                $("p.wp-caption-text").wrap("<div class='well'></div>");
+                $("p.wp-caption-text").addClass("well");
+                <!--$("p.wp-caption-text").wrap("<div class='well'></div>");-->
         </script>
