@@ -5,7 +5,7 @@
 <?php while (have_posts()) : the_post(); ?>
 <article>
 <header class="page-header">
-  <h1 style="color:red"><?php the_title(); ?></h1>
+  <h1><?php the_title(); ?></h1>
 </header>
 <div>
 <script type="text/javascript">// <![CDATA[
