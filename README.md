@@ -1,4 +1,4 @@
-<h1>Booty</h1>
+<h1>Booty 0.1</h1>
 
 <p>A very small wordpress theme intended for developers.</p>
 
