@@ -10,8 +10,7 @@ if (!is_user_logged_in()) {
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 <article>
 <header class="page-header">
-  <h1><a href="<?php echo get_permalink( $post->ID ); ?>" class="booty_post_title"><?php the_title(); ?></a>
-	<span class="nav-header" style="float:right"><?php the_time('F jS, Y') ?></span></h1>
+  <h1><a href="<?php echo get_permalink( $post->ID ); ?>" class="booty_post_title"><?php the_title(); ?></a></h1>
 <!--  <h4 style="float:right" ><i class="icon-pencil"></i> By <?php /* **disable author pages link** the_author_posts_link();*/ ?> <?php echo get_the_author(); ?> .</h4><br>
 --></header>
 <div><?php the_content(__('(more...)')); ?></div>
@@ -25,7 +24,7 @@ if (!is_user_logged_in()) {
  ?>
 <a class="<?php echo $comments_class; ?>" onmouseover="this.className='label label-new-info'" onmouseout="this.className='<?php echo $comments_class; ?>'" href="<?php comments_link(); ?>">
 <?php comments_number('respond', 'one response', '% responses'); ?>
-</a><br/><br/>
+</a> <span class="nav-header" style="float:right"><?php the_time('F jS, Y') ?></span> <br/><br/>
 <?php include('tags.php'); ?>
 </footer>
 </article>
