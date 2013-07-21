@@ -1,6 +1,6 @@
 <script type="text/javascript">  
 
-	    var count = 2; //number of the page that infinitescroll starts displaying
+	    var count = 3; //number of the page that infinitescroll starts displaying
 	    var total = <?php echo $wp_query->max_num_pages; ?>;
             $(window).scroll(function(){  
                     if  ($(window).scrollTop() == $(document).height() - $(window).height()){  
