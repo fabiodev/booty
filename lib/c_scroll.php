@@ -5,7 +5,7 @@ function wp_infinitepaginate(){
     $paged           = $_POST['page_no'];  
     $posts_per_page  = get_option('posts_per_page');  
     # Load the posts  
-    query_posts(array('paged' => $paged ));  
+    query_posts(array('paged' => $paged, 'post_status' => array('publish') ));  
     get_template_part( $loopFile );  
     exit;  
 }  
