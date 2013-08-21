@@ -19,7 +19,7 @@
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 <article>
 <header class="page-header">
-  <h1><a href="<?php echo get_permalink( $post->ID ); ?>" class="booty_post_title"><?php the_title(); ?></a> <small><?php the_time('F jS, Y') ?></small></h1>
+  <h1><a href="<?php echo get_permalink( $post->ID ); ?>" class="booty_post_title"><?php the_title(); ?></a> <small><?php /*the_time('F jS, Y')*/ ?></small></h1>
 </header>
 <div><?php the_content(__('(more...)')); ?></div>
 <footer>
