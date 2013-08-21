@@ -25,6 +25,8 @@
 <footer>
 <a class="label" onmouseover="this.className='label label-new-info'" onmouseout="this.className='label'" href="<?php comments_link(); ?>">
 <?php comments_number('no responses', 'one response', '% responses'); ?>
+</a> <span class="nav-header" style="float:right"><?php the_time('F jS, Y') ?></span> <br/><br/>
+<?php include('tags.php'); ?>
 </a>
 </footer>
 </article>
