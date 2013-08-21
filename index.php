@@ -22,4 +22,6 @@ if (!is_user_logged_in()) {
 <?php get_sidebar('right'); ?>
 </div>
 <a id="inifiniteLoader" class="btn btn-primary" style="margin-left:auto; margin-right:auto;">Scroll down to load more posts...</a>
-<?php get_footer(); ?>
+<?php //get_footer();
+	require('mfooter.php');
+ ?>

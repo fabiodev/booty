@@ -36,6 +36,7 @@ if (!is_user_logged_in()) {
 <div class="alert alert-info"><?php get_search_form(); ?></div>
 <?php endif; ?>
 
+
 <?php //deprecated in favor of infinite scroll
       //include('pager.php'); ?>
 

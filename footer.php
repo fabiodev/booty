@@ -82,7 +82,7 @@ checkCookie();
  });
 </script>
 
-	<?php require('lib/continuous_scroll.php'); ?>
+	<?php //require('lib/continuous_scroll.php'); ?>
     </body>
 </html>
 <!--<?php echo get_num_queries(); ?> queries. <?php timer_stop(1); ?> seconds. -->
