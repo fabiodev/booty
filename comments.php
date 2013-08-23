@@ -17,9 +17,10 @@ if ( post_password_required() ) : ?>
 </div>
 <?php else : ?>
 
+<!-- <legend>Post your comment</legend> -->
 <form action="<?php echo get_option('siteurl'); ?>/wp-comments-post.php" 
       method="post" id="commentform" class="form-horizontal">
-<legend>Post your comment</legend>
+<!-- <legend>Post your comment</legend> -->
 <?php if ( is_user_logged_in() ) : ?>
 
 <div class="alert alert-info">

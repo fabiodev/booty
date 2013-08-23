@@ -5,13 +5,6 @@
 <?php get_sidebar('left'); ?>
 
 
-<?php 
-//Notice to visitors
-if (!is_user_logged_in()) {
-	require('modal-notice.php');
-}
-?>
-
 <?php require('loop.php'); ?>
 
 <?php //deprecated in favor of infinite scroll
