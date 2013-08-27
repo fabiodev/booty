@@ -55,7 +55,7 @@ at <?=$comment->comment_date?>
 <?php
 	//Custom Page Widgets
         if (!dynamic_sidebar('custom_page_sidebar')) {
-                include('lib/sidebar-static.php');
+                //include('lib/sidebar-static.php');
         }
 ?>
 </div><!-- Ends sanp12 -->
