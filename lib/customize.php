@@ -30,6 +30,14 @@ function arphabet_widgets_init() {
         ) );
 	}
 
+        register_sidebar( array(
+                'name' => 'custom page sidebar',
+                'id' => 'custom_page_sidebar',
+                'before_widget' => '<div class="alert sidebar-widget sidebar-nav">',
+                'after_widget' => '</div>',
+                'before_title' => '<ul class="nav nav-list"><li class="nav-header">',
+                'after_title' => '</li></ul>',
+        ) );
 
 }
 add_action( 'widgets_init', 'arphabet_widgets_init' );

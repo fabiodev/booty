@@ -14,7 +14,7 @@
 </div><!-- this closes a div tag that's opened on the file sidebar-left but containes the posts-->
 <?php get_sidebar('right'); ?>
 </div>
-<a id="inifiniteLoader" class="btn btn-primary" style="margin-left:auto; margin-right:auto;">Scroll down to load more posts...</a>
+<div style="text-align:center;"><a id="inifiniteLoader" class="btn btn-primary" style="margin-left:auto; margin-right:auto; text-align:center;">Scroll down to load more posts...</a></div>
 <?php //get_footer();
 	require('mfooter.php');
  ?>

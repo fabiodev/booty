@@ -51,7 +51,14 @@ at <?=$comment->comment_date?>
 	endforeach; ?>
 <?php include('comments.php'); ?>
 </section>
-</div>
+
+<?php
+	//Custom Page Widgets
+        if (!dynamic_sidebar('custom_page_sidebar')) {
+                include('lib/sidebar-static.php');
+        }
+?>
+</div><!-- Ends sanp12 -->
 
 </div>
 <?php get_footer(); ?>

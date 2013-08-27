@@ -17,10 +17,9 @@ if ( post_password_required() ) : ?>
 </div>
 <?php else : ?>
 
-<!-- <legend>Post your comment</legend> -->
+<fieldset><legend>Post your comment</legend></fieldset>
 <form action="<?php echo get_option('siteurl'); ?>/wp-comments-post.php" 
       method="post" id="commentform" class="form-horizontal">
-<!-- <legend>Post your comment</legend> -->
 <?php if ( is_user_logged_in() ) : ?>
 
 <div class="alert alert-info">
@@ -31,7 +30,7 @@ You can place your comment if you wish to do so.
 <div class="control-group">
 <label class="control-label" for="author">Name</label>
 <div class="controls">
-<input type="text" name="author" placeholder="Type your name..." />
+<input type="text" name="author" id="author" placeholder="Type your name..." />
 </div>
 </div>
 <div class="control-group">
