@@ -22,9 +22,9 @@ if (!is_user_logged_in()) {
 	$comments_class="label label-new-success";
 	}
  ?>
-<a class="<?php echo $comments_class; ?>" onmouseover="this.className='label label-new-info'" onmouseout="this.className='<?php echo $comments_class; ?>'" href="<?php comments_link(); ?>">
+<div style="float:left"><a class="<?php echo $comments_class; ?>" onmouseover="this.className='label label-new-info'" onmouseout="this.className='<?php echo $comments_class; ?>'" href="<?php comments_link(); ?>">
 <?php comments_number('respond', 'one response', '% responses'); ?>
-</a> <span class="nav-header" style="float:right"><?php the_time('F jS, Y') ?></span> <br/><br/>
+</a></div><div class="fb-like" data-href="<?php echo get_permalink( $post->ID ); ?>" data-width="450" data-layout="button_count"  data-show-faces="true" data-send="true"></div> <div style="float:right"><span class="nav-header" style="float:right"><?php the_time('F jS, Y') ?></span></div> <br/><br/>
 <?php include('tags.php'); ?>
 </footer>
 </article>

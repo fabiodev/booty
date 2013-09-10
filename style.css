@@ -291,3 +291,9 @@ ul.blogroll {
 .navbar-info .btn-navbar.active {
   background-color: #000000 \9;
 }
+
+.fb_iframe_widget {
+  margin-left:5px !important;
+  margin-top:1px !important;
+  float:left !important;
+}
