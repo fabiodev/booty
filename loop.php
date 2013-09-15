@@ -1,12 +1,5 @@
 <section id="list-posts">
 
-<?php 
-//Notice to visitors
-if (!is_user_logged_in()) {
-	require('modal-notice.php');
-}
-?>
-
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 <article>
 <header class="page-header">
