@@ -5,14 +5,15 @@
 <?php while (have_posts()) : the_post(); ?>
 <article>
 <header class="page-header">
- <!-- <h1><?php //the_title(); ?> -->
+ <h1><?php the_title(); ?>
 <?php
         $permalink = get_permalink( $id );
         $msgg ="<div class='pull-right'><div class='fb-like pull-right' data-href='".$permalink."' data-width='350'
-data-show-faces='true' data-send='true'></div></div>";
+data-layout='button_count' data-show-faces='true' data-send='true'></div></div>";
         echo $msgg;
 ?>
-<h1><?php the_title(); ?></h1>
+</h1>
+<!-- <h1><?php //the_title(); ?></h1>-->
 </header>
 <div>
 <script type="text/javascript">// <![CDATA[
