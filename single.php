@@ -10,8 +10,14 @@
   <h1><?php the_title(); ?> <small><?php the_time('F jS, Y') ?></small></h1>
 </header>
 <div><?php the_content(); ?></div>
+
+<div><div style="overflow:auto;width:100%;text-align:center" class="fb-like" data-href="<?php echo get_permalink( $post->ID ); ?>" data-width="450" 
+data-layout="button_count"  data-show-faces="true" data-send="true"></div></div>
+
+<br /><hr />
+
 <?php //ADDs tags to the bottom of the post if they exist
-	require('tags.php'); ?>
+        require('tags.php'); ?>
 <hr />
 <section id="comments">
 <h3>Comments</h3>
