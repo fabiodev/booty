@@ -23,12 +23,8 @@
             s.parentNode.insertBefore(g,s)}(document,'script'));
         </script>
 	<script>
-                $("article img").addClass("img-polaroid");
-               	<!--$("p.wp-caption-text").before("<li class='nav-header'>Sobre a foto a cima:</li>");-->
-                $("p.wp-caption-text").css("color","blue");
-                $("p.wp-caption-text").css("font-weight","bold");
-		$("p.wp-caption-text").addClass("well well-small");
-                <!--$("p.wp-caption-text").wrap("<div class='well'></div>");-->
+                $("article img").addClass("my-img");
+		$("p.wp-caption-text").addClass("well well-small my-caption");
         </script>
 
 	<?php require('lib/continuous_scroll.php'); ?>

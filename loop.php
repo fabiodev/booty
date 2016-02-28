@@ -6,7 +6,9 @@
   <h1><a href="<?php echo get_permalink( $post->ID ); ?>" class="booty_post_title"><?php the_title(); ?></a></h1>
 <!--  <h4 style="float:right" ><i class="icon-pencil"></i> By <?php /* **disable author pages link** the_author_posts_link();*/ ?> <?php echo get_the_author(); ?> .</h4><br>
 --></header>
+
 <div><?php the_content(__('(more...)')); ?></div>
+
 <footer>
 <?php $hascomments=get_comments_number();
 	if($hascomments==0){
@@ -31,15 +33,12 @@
 
 
 <?php //deprecated in favor of infinite scroll
-      //include('pager.php'); ?>
+      //include('pager.php');
+?>
 
 
 </section>
         <script>
-                $("article img").addClass("img-polaroid");
-                <!--$("p.wp-caption-text").before("<li class='nav-header'>Sobre a foto a cima:</li>");-->
-                $("p.wp-caption-text").css("color","blue");
-                $("p.wp-caption-text").css("font-weight","bold");
-                $("p.wp-caption-text").addClass("well well-small");
-                <!--$("p.wp-caption-text").wrap("<div class='well'></div>");-->
+                $("article img").addClass("my-img");
+                $("p.wp-caption-text").addClass("well well-small my-caption");
         </script>

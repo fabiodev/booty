@@ -297,3 +297,14 @@ ul.blogroll {
   margin-top:1px !important;
   float:left !important;
 }
+
+.my-img {
+  webkit-box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+}
+
+.my-caption {
+  color: blue;
+  font-weight: bold;
+}
